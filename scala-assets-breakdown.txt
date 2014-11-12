@@ -1,0 +1,20 @@
+Does homepage.css get included on the page twice? (once by homepack.min.css) and
+should we resolve this.
+
+Dependencies in lower level folders (eva for example) use bower
+
+Version numbers are just cache busters.
+
+#############################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/  eva/components/homepage/public/css/homepage.css
+#############################################################################################
+
+minified version of src/main/webapp/eva/components/homepage/public/css/homepage.css
+from the assets folder. This file originally comes from the homepage project.
+
+(probably duplicating home.pack.min.css)
+
+
+###########################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/icons.css
+###########################################################################################
