@@ -1,0 +1,38 @@
+#################################################
+# CSS: application.css from the fragment server #
+#################################################
+
+current version: https://test-eva-fragment-server.herokuapp.com/assets/application-b25f551baa48022247939b2484ce82b0.css
+
+*= require_tree .
+  - nothing is required by the tree
+*= require_self
+  - there is no code in the application.css
+*= require eva
+  -
+
+
+
+#################################################
+# JS: application.js from the fragment server   #
+#################################################
+
+current version: https://test-eva-fragment-server.herokuapp.com/assets/application-644c3ecf8547bdea2024067cce40eb87.js
+
+//= require jquery
+  - from gem jquery-rails 3.1.1 (jQuery version 1.11.0)
+//= require jquery_ujs
+  - jquery_ujs (can be removed)
+//= require turbolinks
+  - (can be removed)
+//= require eva
+  //= require 'cookies'
+    - cookies.js (Scott Hamper 0.4.0)
+  //= require 'jquery'
+    - from gem jquery-rails 3.1.1 (jQuery version 1.11.0) (already required)
+  //= require 'global-navigation/global-navigation'
+    0
+  //= require 'e-privacy/eprivacy'
+  //= require_self
+//= require_tree .
+  - there is nothing in this folder

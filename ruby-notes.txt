@@ -1,0 +1,52 @@
+Ruby CSS and JavaScript fragments:
+
+The fragments are the same between the 2 variants (homepage and standard)
+
+
+
+#############################################
+# homepageLookAndFeelFragment               #
+#############################################
+
+URL: https://test-eva-fragment-server.herokuapp.com/fragments/homepageLookAndFeelFragment/asdf
+
+HTML
+====
+
+<link href="https://test-eva-fragment-server.herokuapp.com/assets/application-b25f551baa48022247939b2484ce82b0.css" media="all" rel="stylesheet" />
+
+
+#############################################
+# homepageScriptFragment                    #
+#############################################
+
+URL: https://test-eva-fragment-server.herokuapp.com/fragments/homepageScriptFragment/asdf
+
+HTML
+====
+
+<script src="https://test-eva-fragment-server.herokuapp.com/assets/application-644c3ecf8547bdea2024067cce40eb87.js"></script>
+
+
+#############################################
+# standardPageLookAndFeelFragment           #
+#############################################
+
+URL: https://test-eva-fragment-server.herokuapp.com/fragments/standardPageLookAndFeelFragment/asdf
+
+HTML
+====
+
+<link href="https://test-eva-fragment-server.herokuapp.com/assets/application-b25f551baa48022247939b2484ce82b0.css" media="all" rel="stylesheet" />
+
+
+#############################################
+# standardPageScriptFragment                #
+#############################################
+
+URL: https://test-eva-fragment-server.herokuapp.com/fragments/standardPageScriptFragment/asdf
+
+HTML
+====
+
+<script src="https://test-eva-fragment-server.herokuapp.com/assets/application-644c3ecf8547bdea2024067cce40eb87.js"></script>

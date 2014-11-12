@@ -1,0 +1,78 @@
+Scala CSS and JavaScript fragments:
+
+current staticAssetsUrl (production): http://www.staticwhich.co.uk
+
+Note that <asdf> would be replaced by some kind over version number below.
+
+current version number: 182
+
+#############################################
+# homepageLookAndFeelFragment               #
+#############################################
+
+URL: http://elb.fragment.green.which.co.uk/fragments/homepageLookAndFeelFragment/asdf
+Purpose: Provide the CSS links for the homepage
+
+
+HTML
+====
+
+         <!-- NEW HOME PAGE -->
+         <link rel="stylesheet" href="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/homepage.css">
+         <link rel="stylesheet" href="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/icons.css">
+         <!--[if lt IE 9]>
+             <link rel="stylesheet" href="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/homepage-ie.css">
+             <link rel="stylesheet" href="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/icons-ie7.css">
+         <![endif]-->
+         <link rel="stylesheet" href="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/typography.css">
+
+
+
+
+
+#############################################
+# homepageScriptFragment                    #
+#############################################
+
+URL: http://elb.fragment.green.which.co.uk/fragments/homepageScriptFragment/asdf
+Purpose: Provide the JS scripts for the homepage
+
+HTML
+====
+
+<script data-main="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/js/main-homepage-new.js" src="http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/js/require.js"></script>
+
+
+
+#############################################
+# standardPageLookAndFeelFragment           #
+#############################################
+
+URL: http://elb.fragment.green.which.co.uk/fragments/standardPageLookAndFeelFragment/asdf
+Purpose: Provide the CSS for pages other than the homepage
+
+HTML
+====
+
+
+                <!-- NAV -->
+        <link rel="stylesheet" type="text/css" href="$!{staticAssetsUrl}/assets/asdf/nav/globalnav/public/css/global-navigation-comp.css">
+        <link rel="stylesheet" type="text/css" href="$!{staticAssetsUrl}/assets/asdf/nav/globalnav/public/css/masthead.css">
+        <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="$!{staticAssetsUrl}/assets/asdf/nav/globalnav/public/components/typography/icons-ie7.css">
+        <link rel="stylesheet" type="text/css" href="$!{staticAssetsUrl}/assets/asdf/nav/globalnav/public/css/global-navigation-ie.css">
+        <![endif]-->
+
+
+
+#############################################
+# standardPageScriptFragment                #
+#############################################
+
+URL: http://elb.fragment.green.which.co.uk/fragments/standardPageScriptFragment/asdf
+Purpose: Provide the JavaScript tags for pages other than the homepage
+
+HTML
+====
+
+<script data-main="$!{staticAssetsUrl}/assets/asdf/nav/globalnav/public/js/main.js" src="$!{staticAssetsUrl}/assets/asdf/nav/globalnav/public/components/requirejs/require.js"></script>
