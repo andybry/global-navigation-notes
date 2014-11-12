@@ -1,3 +1,6 @@
+The Ruby fragment server does not load the IE specific CSS files
+
+The Ruby fragment server
 #################################################
 # CSS: application.css from the fragment server #
 #################################################
@@ -9,7 +12,33 @@ current version: https://test-eva-fragment-server.herokuapp.com/assets/applicati
 *= require_self
   - there is no code in the application.css
 *= require eva
-  -
+  @import "reset";
+    - eric myer CSS
+  @import "responsive/grid";
+    - grid mixins
+  @import "colours/colours";
+    - colours agreed with the design team
+  @import "typography/typography";
+    - base typography
+  @import "typography/font-face";
+    - defines fonts
+  @import "buttons/buttons";
+    - Which? buttons
+  @import "typography/icons";
+    - content codes for the icons
+  @import "e-privacy/eprivacy";
+    - cookie directive CSS
+  @import "global-footer/global-footer";
+    - global footer
+  @import "global-navigation/global-navigation";
+    - the old global navigation
+  @import "global-navigation/global-navigation-new";
+    - the new global navigation
+  @import "forms/forms";
+    - styling for form based elements
+  @import "utils/text";
+    - truncate and .a11y
+  //@import "eva_rails/navigation";
 
 
 
@@ -31,8 +60,10 @@ current version: https://test-eva-fragment-server.herokuapp.com/assets/applicati
   //= require 'jquery'
     - from gem jquery-rails 3.1.1 (jQuery version 1.11.0) (already required)
   //= require 'global-navigation/global-navigation'
-    0
+    - JavaScript for the UI of the new Global Navigation
   //= require 'e-privacy/eprivacy'
+    - JavaScript for the cookies directive
   //= require_self
+    - initialise Global Navigation and ePrivacy
 //= require_tree .
   - there is nothing in this folder
