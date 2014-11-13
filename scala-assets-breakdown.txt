@@ -5,6 +5,8 @@ Dependencies in lower level folders (eva for example) use bower
 
 Version numbers are just cache busters.
 
+Colours are listed all over the place.
+
 #############################################################################################
 # http://www.staticwhich.co.uk/assets/asdf/  eva/components/homepage/public/css/homepage.css
 #############################################################################################
@@ -73,3 +75,33 @@ There is no scss file for this
 # http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/homepage-ie.css
 ###########################################################################################
 
+In the first instance this comes from the homepage project
+This is then generated from the SCSS file hompepage/public/scss/homepage-ie.scss
+
+Before importing 100 lines of CSS (which-product-summary, footer, which-sign-up and a few others)
+it imports the following files:
+
+@import '../components/eva-grid-frameless/grid.scss';
+  - as in homepage.css this imports the grid again.
+@import '../../modules/hero/public/scss/hero-ie.scss';
+  - a few classes relating to the hero component
+@import '../components/eva-utils/colours.scss';
+  - the colours
+@import '../components/eva-global-navigation/public/scss/global-navigation-ie.scss';
+  - 2 IE8 styles
+
+###########################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/icons-ie7.css
+###########################################################################################
+
+In the first instance this comes from the homepage project
+It is copied from eva-typography (version 1.1.7)
+There is no scss file for this
+
+###########################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/typography.css
+###########################################################################################
+
+In the first instance this comes from the homepage project
+It is copied from eva-typography (version 1.1.7)
+There is no scss file for this
