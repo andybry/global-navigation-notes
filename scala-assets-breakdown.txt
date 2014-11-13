@@ -7,6 +7,9 @@ Version numbers are just cache busters.
 
 Colours are listed all over the place.
 
+Homepage CSS
+============
+
 #############################################################################################
 # http://www.staticwhich.co.uk/assets/asdf/  eva/components/homepage/public/css/homepage.css
 #############################################################################################
@@ -105,3 +108,18 @@ There is no scss file for this
 In the first instance this comes from the homepage project
 It is copied from eva-typography (version 1.1.7)
 There is no scss file for this
+
+Homepage JavaScript
+===================
+
+###########################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/js/main-homepage-new.js
+###########################################################################################
+
+Using require.js it loads the following:
+
+jquery
+nav
+hero
+pagebody
+eprivacy
