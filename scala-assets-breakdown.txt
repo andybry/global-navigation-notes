@@ -118,8 +118,48 @@ Homepage JavaScript
 
 Using require.js it loads the following:
 
-jquery
-nav
-hero
-pagebody
-eprivacy
+jquery.js
+  - jQuery v1.9.1
+nav.js
+  - navigation module
+hero.js
+  - javascript for the slideshow hero banner
+pagebody.js
+  - Gallery for product reviews
+  - hammer.js dependency for touch gestures (not included via require.js)
+eprivacy (../components/eva-eprivacy/main.js)
+ - Javascript for the cookie directive
+ - Requires cookie-monster (../components/cookie-monster/cookie-monster/lib/monster.js)
+    - javascript library to manage cookies
+new
+  - Checks for sso_auth cookie to determine whether to show "the survey"
+  - Requires cookie-monster as above
+
+
+Standard Page CSS
+==================
+
+#############################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/nav/globalnav/public/css/global-navigation-comp.css
+#############################################################################################
+
+In the first instance this comes from the eva-global-navigation project
+This is then generated from the SCSS file nav/public/scss/global-navigation-comp.scss
+
+Small chunk of CSS directly in file.
+
+@import '../components/eva-typography/font-face.scss';
+  - Originates from eva-typography project
+@import '../components/eva-typography/icons.css';
+  - This is in fact a normal .css file, which is inserted into the compiled CSS
+    as a normal @import statement
+@import 'global-navigation';
+  - 940 lines of CSS, inc. Meyer resets
+@import 'masthead';
+  - Search box?
+
+#############################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/nav/globalnav/public/css/masthead.css
+#############################################################################################
+
+The compiled masthead CSS that was already imported into global-navigation-comp.scss
