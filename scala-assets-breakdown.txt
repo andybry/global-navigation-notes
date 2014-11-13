@@ -12,9 +12,64 @@ Version numbers are just cache busters.
 minified version of src/main/webapp/eva/components/homepage/public/css/homepage.css
 from the assets folder. This file originally comes from the homepage project.
 
+homepage.css is generated from homepage/public/scss/homepage.scss:
+
+@import 'reset.scss';
+  - old non bower version of meyer reset
+@import '../components/eva-grid-frameless/grid.scss';
+  - different (older) version of the grid from the ruby version
+@import '../components/eva-typography/font-face.scss';
+  - possibly different from the ruby version
+@import '../components/eva-global-navigation/public/scss/global-navigation.scss';
+  - older version of global navigation
+@import '../components/eva-global-footer/public/scss/global-footer.scss';
+  - older version of the footer (has it's own break points)
+@import '../components/eva-eprivacy/style.scss';
+  - older version of the cookies directive css
+@import '../components/eva-buttons/button.scss';
+  - older version? of buttons.
+
+// CSS written directly in the homepage.scss file:
+.global-nav .button {
+  border-radius: 0;
+}
+
+.eprivacy .container {
+  padding: 30px 0px;
+}
+
+.googledoubleclick {
+  display: none;
+}
+
+// Modules
+
+@import '../modules/hero/public/scss/hero.scss'; (slideshow at the top of the homepage)
+  - vhsplits
+    ???? - this needs to be included. Includes some mixins
+  - hero-nojs
+    a few nojs styles associated with the slideshow
+@import '../modules/page-body/public/scss/page-body.scss';
+  - main body of the  page
+@import '../modules/old-new/oldnew.scss';
+  - associated with a survey? (everything is namespaced within the oldnew class)
+    we can probably leave this in unless ist's causing some clashes
+
+
 (probably duplicating home.pack.min.css)
 
 
 ###########################################################################################
 # http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/icons.css
 ###########################################################################################
+
+In the first instance this comes from the homepage project
+It is copied from eva-typography (version 1.1.7)
+There is no scss file for this
+
+
+
+###########################################################################################
+# http://www.staticwhich.co.uk/assets/asdf/eva/components/homepage/public/css/homepage-ie.css
+###########################################################################################
+
