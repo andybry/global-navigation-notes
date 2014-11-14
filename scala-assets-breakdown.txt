@@ -177,6 +177,11 @@ There is no scss file for this
 
 IE 8 styles - 2 classes, no imports.
 
+Standard Page Javascript
+========================
 
+Using require.js (../components/requirejs) it loads nav.js from nav/globalnav/public/js
+This is *slightly* different (1 new line) to the nav.js in eva/components/homepage/public/js/nav.js
 
-
+New line:
+  55: $(".my-account-link").removeAttr("href");
